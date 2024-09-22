@@ -38,8 +38,8 @@ def main():
             print("The message field cannot be submitted blank!")
             continue
 
-        freq = letter_frequency(input_message)
-        display_frequency(freq)
+        frequency_count = letter_frequency(input_message)
+        display_frequency(frequency_count)
 
         submit_another = input("Do you want to analyze another message? (yes/no): ").lower().strip()
         if submit_another == "no":
@@ -48,7 +48,7 @@ def main():
         elif submit_another == "yes":
             continue
         else:
-            print("Please enter 'yes' or 'no'.")
+            print("Your choice is invalid")
 
 main()
 
