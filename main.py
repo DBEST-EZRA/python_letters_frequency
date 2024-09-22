@@ -22,10 +22,10 @@ def display_frequency(frequency):
         print("Your message has no letters!")
         return
 
-    sorted_freq = dict(sorted(frequency.items()))
+    sorted_alphabets = dict(sorted(frequency.items()))
 
     print("Letter Frequencies:")
-    for letter, count in sorted_freq.items():
+    for letter, count in sorted_alphabets.items():
         print(f"{letter}: {count}")
 
 
